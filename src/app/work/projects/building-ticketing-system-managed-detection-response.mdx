@@ -1,0 +1,141 @@
+---
+title: "Building a Ticketing System for a Managed Detection & Response Platform"
+publishedAt: "2024-04-28"
+summary: "User research found that users were struggling to effectively respond to security incidents because the third-party ticket system we were using did not fit well in their workflow."
+images:
+  - "/images/projects/investigations/hero.jpg"
+  - "/images/projects/investigations/showcase.jpg"
+team:
+  - name: "Max Gauntner"
+    role: "Senior Product Designer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/maxgauntner/"
+---
+<Table
+  data={{
+    headers: [
+      { content: "Name", key: "name" },
+      { content: "Role", key: "role" },
+    ],
+    rows: [
+      ["Max Gauntner", "Senior Product Designer"],
+      ["Chris Chevalier", "Product Owner"],
+      ["Cristina Wasinger", "Product Manager"],
+      ["Zach Bybee", "Lead Software Engineer"],
+      ["Kevin McGuffin", "Software Engineer III"],
+      ["James Walker", "Software Engineer"],
+      ["Greg Larrick", "Senior Software Engineer"],
+      ["Daniil Volguzhev", "Senior Test Automation Engineer"],
+      ["Ajay Bhosale", "Senior Software Architect"],
+    ],
+  }}
+/>
+
+## Project Overview
+
+Binary Defense is a managed security service provider that specializes in managed detection and response solutions. While in my role as UX Architect at Binary Defense, we have been building a platform that will become our customers' primary touchpoint for their Managed Detection and Response serivce. With a quick go-to-market strategy, the platform was expected to reach general audience in Q2 2024. To make this happen, the BD Platform scope was reduced to a MVP version with a focus on the investigation (ticketing) feature.
+
+## Tools Used
+
+<AccordionGroup marginTop="20" marginBottom="20"
+  items={[
+    {
+      title: "Figma",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For design concepts and rapid prototyping.
+        </Text>
+    },
+    {
+      title: "Miro",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For whiteboarding and diagram mapping/information architecture as well as creating journey maps and personas for the new product.
+        </Text>
+    },
+    {
+      title: "Chromatic",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For reviewing and accepting builds.
+        </Text>
+    },
+    {
+      title: "Storybook",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For reviewing components add to the design system.
+        </Text>
+    },
+    {
+      title: "GitLab",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For automating the pipeline and adding design requirements/stories.
+        </Text>
+    }
+  ]}
+/>
+
+<div className="display-flex g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/tool-1.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/tool-2.jpg)</div>
+</div>
+<div className="display-flex pb-8 g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/tool-4.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/tool-3.jpg)</div>
+</div>
+
+## The Challenge
+
+In exploratory research, it was found that customers had frustrations with using an external ticketing system which caused more steps than necessary to escalate and manage their tickets. Furthermore, customers using the current MDR platform (BD Vision) have a separate system into which they login, but it does not link to the ticketing system. Both of these scenarios are unacceptable because we do not own the third-party ticketing system and cannot control the user experience. Our primary user, security analyst, wants to be able to respond to escalated alerts within the same system in which they are notified of escalation.
+
+![Example](/images/projects/investigations/showcase.jpg)
+
+## Solutions
+
+While in the planning phase of the BD Platform and using initial research, I built quick workflows using my comprehensive design system and reviewed it internally with team members and leaderhip. Here, we understood our challenges, roadblocks, and problems to be solved. We compiled a large amount of user feedback and built out personas according to the type of users that will use our new platform. It was felt that our findings were important and should be addressed.
+
+## Goals
+
+> Providing customers with valuable metrics that they can access when they want and customize as they need.
+
+> Creating a unified ticket workflow experience that supports key use cases.
+
+> Allow internal access to manage and onboard accounts and their users.
+
+> Reducing overall cognitive load and improving workflow.
+
+> Capturing requirements for a intial release with a quick quick go-to-market strategy, while providing enough value.
+
+## Providing Valuable Metrics
+
+During a few research studies, I interviewed our SOC Analysts and SOC Leadership to understand the most crucial metrics that need to be available to our customers. Along with a few customer interviews, we compiled a list of metrics we can display on the dashboard as well as on the other feature pages. Our goal for these metrics is to give our customers insights into their environment and be able to understand where they need to take action.
+
+![Example](/images/projects/investigations/feature-1.jpg)
+
+## Unified Ticketing Workflow
+
+As mentioned earlier, instead of using a third-party ticketing system, we integrated our own into the platform, pulling in data through api's. After understanding the SOC workflow, integrations, and limits, I designed a in-depth workflow of the ticketing feature. Our goal for this feature is to allow customers to respond directly to tickets, change statuses, follow the timeline of events, and access the escalated alert information linking to the sourced alert information on BD Vision.
+
+![Example](/images/projects/investigations/feature-2.jpg)
+<div className="display-flex pb-8 g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/feature-2a.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/feature-2b.jpg)</div>
+</div>
+
+## Internal Account Management
+
+In order to manage accounts and their users, we needed to think about a few internal processes. First, we need to be able to onboard tenants to the platform and manage the users on their behalf. We created a System Admin persona that ideally will perform these actions. After a few passes and a fully interactive prototype, I performed a usability study with a few key IT Admins. We found out that, overall, the feature was easy to use and provided positive feedback about the workflow. There were a few things that posed to be problematic that we addressed and implemented into the final version.
+
+![Example](/images/projects/investigations/feature-3.jpg)
+<div className="display-flex pb-8 g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/feature-3a.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/investigations/feature-3b.jpg)</div>
+</div>
+
+## Outcomes & Impacts
+
+Today, we contine to build upon BD Platform's features and developed a product roadmap to address the needs and wants of our customers through countless interviews, feature feedback, and quarterly business reviews. After months of building, testing, and QA, we launched the initial version of the BD Platform in Q2 of 2024. The platform was well receieved by our leadership as well as countless customers who onboarded as soon as they heard.
+
+Later in 2024, Binary Defense was invited to participate in the Forrester Wave™ demo to be judged against the competition. In short, the Forrester Wave™ is a guide for buyers considering their purchasing options in a technology marketplace and is based on their analysis and opinion. In this report, it was stated that Binary Defense is "punching above our weight" and that we scored high in many categories about our offerings.

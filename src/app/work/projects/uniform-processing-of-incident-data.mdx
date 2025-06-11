@@ -1,0 +1,131 @@
+---
+title: "Feature: Uniform Processing of Incident Data from a Variety of Sources"
+publishedAt: "2024-10-20"
+summary: "Originally cut from the initial release of the BD Platform, the Alerts feature reintroduces security alert data to provide significant value and quick reponse actions."
+images:
+  - "/images/projects/alerts/hero.jpg"
+  - "/images/projects/alerts/showcase.jpg"
+team:
+  - name: "Max Gauntner"
+    role: "Senior Product Designer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/maxgauntner/"
+---
+<Table
+  data={{
+    headers: [
+      { content: "Name", key: "name" },
+      { content: "Role", key: "role" },
+    ],
+    rows: [
+      ["Max Gauntner", "Senior Product Designer"],
+      ["Chris Chevalier", "Product Owner"],
+      ["Cristina Wasinger", "Product Manager"],
+      ["Keegan McCafferty", "Lead Software Engineer"],
+      ["Kevin McGuffin", "Software Engineer III"],
+      ["Richard Nguyen", "Software Engineer I"],
+      ["Vinh Huynh", "Software Engineer Intern"],
+    ],
+  }}
+/>
+
+## Project Overview
+
+Before the launch of the BD Platform, we developed a product roadmap for 2024 and 2025 to plan the next phases of the BD Platform timeline. In phase two of the platform, the Alert feature was accepted to allow customers to view and manage their security alerts, regardless of sources, via a SOAR integration. This phase was in line with our objective of giving our customer full visibility and ownership into their MDR service via a maintainable proprietary application. Here, we continued to focus on building the new interface that brings all BD Service into one central view. Since response time is very important in this industry, we had to also conceptualize ways to improve decision-making using quick action items and organized data.
+
+## Tools Used
+
+<AccordionGroup marginTop="20" marginBottom="20"
+  items={[
+    {
+      title: "Figma",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For design concepts and rapid prototyping.
+        </Text>
+    },
+    {
+      title: "Miro",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For whiteboarding and diagram mapping/information architecture.
+        </Text>
+    },
+    {
+      title: "Chromatic",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For reviewing and accepting builds.
+        </Text>
+    },
+    {
+      title: "Storybook",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For reviewing components add to the design system.
+        </Text>
+    },
+    {
+      title: "GitLab",
+      content:
+        <Text onBackground="neutral-medium" variant="body-default-l">
+          For automating the pipeline and adding design requirements/stories.
+        </Text>
+    }
+  ]}
+/>
+
+<div className="display-flex g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/tool-1.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/tool-2.jpg)</div>
+</div>
+<div className="display-flex pb-8 g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/tool-3.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/tool-4.jpg)</div>
+</div>
+
+## The Challenge
+
+In previous research studies, it was found that customers sometimes have trouble understanding alerts and what incident response steps are needed based on the alert details. From this research, we redesigned the alert details page in the old platofrm, BD Vision, to address these concerns. After the introduction of the BD Platform, research pointed to add the alert data into BD Platform. While we already completed initial research, we applied a new round of testing to help us build this feature out for the new platform. Another challenge we faced involved standardizing alert data from other sources that varied widly in terms of content.
+
+![Example](/images/projects/alerts/showcase.jpg)
+
+## Solutions
+
+After understanding the key issues from a previous round of research and testing (associated to BD Vision), we begun to design concepts to accommodate the complex data. Because alert data varied widely, we had to find ways to display the data in a variety of formats for easy consumption by the end user. Additional functionality will be provided as helpful graphs, KPIs, sortable tables, and detailed drill-down views in order to give the customer additional ways to surface information necessary for deeper understanding of IOCs in their environment.
+
+## Goals
+
+> The ability to easily change with what underlying technology the platform is integrated should be considered.
+
+> Obtaining near-real-time data to show the most up-to-date information.
+
+> Determining if tuning efforts are being effective in reducing false positive alerts over time.
+
+> Standardizing data source used for reporting metrics to ensure consistency in reporting.
+
+> Understanding the alert data and take action on escalated incidents to improve comprehension.
+
+## Organized and Consistent Data
+
+With a solid starting point from initial research efforts, I designed a workable prototype that we continued to refine over the span of a few months. During the sprint, the engineering team changed their SOAR integration in which we had to adjust how alert data was processed. After changing scope, we finalized the designs to meet the criteria better. We simplified how the data is displayed, updated the filtering workflow, added new metrics important to customers, and added quick-view modals to show snapshots of data. All of these changes will help our customers to be able access data more quickly and react more quickly.
+
+![Example](/images/projects/alerts/feature-1.jpg)
+<div className="display-flex pb-8 g-m s-flex-column s-flex min-width-0 fill-width">
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/feature-1a.jpg)</div>
+    <div className="display-flex flex-6">![Example](/images/projects/alerts/feature-1b.jpg)</div>
+</div>
+
+## Making Complex Data Easy
+
+The second major pain point associated with the Alert feature stemmed from previous research was the ability to understand or read the alert details. This effort investigated this problem further, triangulated the problem with other research findings, and tested solutions with same customer and internal group to measure impact on comprehension and understanding. It was concluded that alerts needed to be rewritten for consistency and reduced jargon. Here we implemented a consistent layout that could incorporate all alert data, no matter the injested source. We also included an area to show the events within the incident, most typically only have one, but we needed to plan for use cases where there could be two, or even fifty events. And each of those events has their own raw log that can be easily accessed in modals.
+
+![Example](/images/projects/alerts/feature-2.jpg)
+
+![Example](/images/projects/alerts/feature-2a.jpg)
+
+## Outcomes and Impacts
+
+Today, we are focused on implementing the Alerts feature into the BD Platform. Most of the feature has been built, with backend testing and QA left to do before it is fully released in Q4 of 2024. Soon, our customers will be able to see metrics regarding their alerts in charts, graphcs, and other indicators. To Binary Defense, this is a huge deal because it will allow the same level of capability currently in BD Vision to view and manage alerts from all sources using our Open XDR methodology.
+
+Although we don't have statisical results yet, we will measure success by product usage tracking and by tuning efforts in reducing false positive rates over time. As we release Alerts, we have plans to increase the amount of sources we can injest into our Sentinel instance, which will give our customer even deeper insights of indicators of compromise in their environment.

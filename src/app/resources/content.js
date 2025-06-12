@@ -388,18 +388,18 @@ const gallery = {
       location: "Exuma, Bahamas",
     },
     {
+      src: "/images/gallery/photo-23.jpg",
+      alt: "image",
+      orientation: "horizontal",
+      technical: "Stocking Island",
+      location: "Exuma, Bahamas",
+    },
+    {
       src: "/images/gallery/photo-22.jpg",
       alt: "image",
       orientation: "vertical",
       technical: "Lutheran Church of Ascension",
       location: "Savannah, GA",
-    },
-    {
-      src: "/images/gallery/photo-23.jpg",
-      alt: "image",
-      orientation: "vertical",
-      technical: "Stocking Island",
-      location: "Exuma, Bahamas",
     },
   ],
 };

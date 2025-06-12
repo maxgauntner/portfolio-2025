@@ -241,7 +241,7 @@ const work = {
 
 const gallery = {
   path: "/gallery",
-  label: "Photography",
+  label: "Photos",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one

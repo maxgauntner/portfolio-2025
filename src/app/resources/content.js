@@ -17,11 +17,10 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}'s Newsletter (Coming Soon)</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, travels, current happenings, and things that seem interesting in the hopes of sharing knowledge.
     </>
   ),
 };
@@ -244,7 +243,6 @@ const gallery = {
   label: "Photos",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {

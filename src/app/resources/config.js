@@ -119,7 +119,7 @@ const mailchimp = {
       colorEnd: "static-transparent",
     },
     dots: {
-      display: true,
+      display: false,
       opacity: 20,
       size: "2",
       color: "brand-on-background-weak",

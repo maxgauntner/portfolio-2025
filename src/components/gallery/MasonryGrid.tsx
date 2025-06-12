@@ -8,8 +8,8 @@ import { useState } from 'react';
 
 export default function MasonryGrid() {
   const breakpointColumnsObj = {
-      default: 2,
-      1440: 2,
+      default: 3,
+      1440: 3,
       1024: 2,
       560: 1
   };

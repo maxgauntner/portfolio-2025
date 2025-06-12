@@ -115,7 +115,7 @@ const about = {
     experiences: [
       {
         company: "Binary Defense Systems",
-        timeframe: "Jan 2023 - Present",
+        timeframe: "01/23 - Now",
         role: "Senior Product Designer",
         achievements: [
           <>
@@ -134,7 +134,7 @@ const about = {
       },
       {
         company: "Binary Defense Systems",
-        timeframe: "Sep 2021 - Jan 2023",
+        timeframe: "09/21 - 01/23",
         role: "UX Architect",
         achievements: [
           <>
@@ -152,7 +152,7 @@ const about = {
       },
       {
         company: "OuterBox, Inc.",
-        timeframe: "Oct 2017 - Sep 2021",
+        timeframe: "10/17 - 09/21",
         role: "Senior UX Designer",
         achievements: [
           <>
@@ -170,7 +170,7 @@ const about = {
       },
       {
         company: "Edge of the Box Marketing",
-        timeframe: "Aug 2016 - Oct 2017",
+        timeframe: "08/16 - 10/17",
         role: "Lead Digital Designer",
         achievements: [
           <>
@@ -385,13 +385,6 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
       technical: "Thunderball Grotto",
-      location: "Exuma, Bahamas",
-    },
-    {
-      src: "/images/gallery/photo-23.jpg",
-      alt: "image",
-      orientation: "horizontal",
-      technical: "Stocking Island",
       location: "Exuma, Bahamas",
     },
     {

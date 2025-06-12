@@ -44,12 +44,14 @@ export default function MasonryGrid() {
                           direction="column" vertical="end" horizontal="center" gap="8"
                           textVariant="label-default-m" paddingBottom="32" paddingX="24">
                           <LetterFx
+                              style={{zIndex:1}}
                               trigger="custom"
                               onTrigger={(handler) => setTriggerLocation(() => handler)}
                               speed="medium">
                               {image.location}
                           </LetterFx>
                           <LetterFx
+                              style={{zIndex:1}}
                               trigger="custom"
                               onTrigger={(handler) => setTriggerTechnical(() => handler)}
                               speed="medium">
@@ -62,7 +64,7 @@ export default function MasonryGrid() {
                             to="top"
                             marginBottom="16"
                             bottomRadius="s"
-                            height={4}
+                            height={12}
                             pattern={{ display: false, size: "2" }}
                             />
                       </Flex>

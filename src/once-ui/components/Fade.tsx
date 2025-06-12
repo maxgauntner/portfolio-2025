@@ -59,7 +59,7 @@ const Fade = forwardRef<HTMLDivElement, FadeProps>(
         fillWidth
         style={
           {
-            opacity:0.5,
+            opacity:0.7,
             "--base-color": getBaseVar(base),
             "--gradient-direction":
               to === "top"

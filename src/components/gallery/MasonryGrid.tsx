@@ -58,6 +58,7 @@ export default function MasonryGrid() {
                               {image.technical}
                           </LetterFx>
                           <Fade
+                            style={{opacity:0.5}}
                             fillWidth
                             position="absolute"
                             bottom="0"

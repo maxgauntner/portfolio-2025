@@ -367,7 +367,7 @@ const gallery = {
     {
       src: "/images/gallery/photo-19.jpg",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
       technical: "Exuma Cays",
       location: "Exuma, Bahamas",
     },

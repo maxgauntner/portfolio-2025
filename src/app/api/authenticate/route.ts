@@ -3,7 +3,7 @@ import * as cookie from "cookie";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { password } = body;
+  const { hiremax } = body;
   const correctPassword = process.env.PAGE_ACCESS_PASSWORD;
 
   if (!correctPassword) {

@@ -13,7 +13,9 @@ const routes = {
 // Set password in the .env file, refer to .env.example
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": false,
+  "/work/reporting-export-options-and-dashboard-customization": true,
+  "/work/uniform-processing-of-incident-data": true,
+  "/work/building-ticketing-system-managed-detection-response": true,
 };
 
 import { Funnel_Sans } from "next/font/google";

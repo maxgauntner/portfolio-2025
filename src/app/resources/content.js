@@ -103,8 +103,8 @@ const about = {
       <br /><br />
       In my free time, I spend the majority of my time with my wife, son, and German Shepherd. Hiking,
       cooking, and traveling are just a few of our favorite things. Currently, I am
-      residing at <Link target="_blank" href="https://www.binarydefense.com/">Binary Defense</Link> as their <InlineCode style={{padding: 'var(--static-space-2) var(--static-space-8)'}}>Senior Product Designer</InlineCode>, focused on building a brand new
-      product with a quick go-to market strategy. Before this role, I was their <InlineCode style={{padding: 'var(--static-space-2) var(--static-space-8)'}}>UX Architect</InlineCode> focused on the research strategy. Want to see some of my design work? Check out a few <Link target="_blank" href="/work">case studies</Link> I've put together to get a feel of how I work, and my design aesthetic.
+      residing at <Link target="_blank" href="https://www.sentinelone.com/">SentinelOne</Link> as their <InlineCode style={{padding: 'var(--static-space-2) var(--static-space-8)'}}>Senior Product Designer</InlineCode>, focused on building a brand new
+      product with a quick go-to market strategy. Before this role, I was the <InlineCode style={{padding: 'var(--static-space-2) var(--static-space-8)'}}>Senior Product Designer</InlineCode> at Binary Defense focused on building a brand new Open XDR platform. Want to see some of my design work? Check out a few <Link target="_blank" href="/work">case studies</Link> I've put together to get a feel of how I work, and my design aesthetic.
       </>
     ),
   },
@@ -113,8 +113,26 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "SentinelOne",
+        timeframe: "Aug 2025 - Now",
+        role: "Senior Product Designer",
+        achievements: [
+          <>Coming soon...
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         company: "Binary Defense Systems",
-        timeframe: "01/23 - Now",
+        timeframe: "Jan 2023 - Aug 2025",
         role: "Senior Product Designer",
         achievements: [
           <>
@@ -133,7 +151,7 @@ const about = {
       },
       {
         company: "Binary Defense Systems",
-        timeframe: "09/21 - 01/23",
+        timeframe: "Sep 2021 - Jan 2023",
         role: "UX Architect",
         achievements: [
           <>
@@ -151,7 +169,7 @@ const about = {
       },
       {
         company: "OuterBox, Inc.",
-        timeframe: "10/17 - 09/21",
+        timeframe: "Oct 2017 - Sep 2021",
         role: "Senior UX Designer",
         achievements: [
           <>
@@ -169,7 +187,7 @@ const about = {
       },
       {
         company: "Edge of the Box Marketing",
-        timeframe: "08/16 - 10/17",
+        timeframe: "Aug 2016 - Oct 2017",
         role: "Lead Digital Designer",
         achievements: [
           <>

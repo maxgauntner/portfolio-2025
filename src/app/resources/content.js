@@ -61,7 +61,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>I'm Max, a product designer currently at <a href="https://www.binarydefense.com/" target="blank">Binary Defense</a>.</>,
+  headline: <>I'm Max, a product designer currently at <a href="https://www.sentinelone.com/" target="blank">SentinelOne</a>.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Dashboarding Feature</strong></>,
